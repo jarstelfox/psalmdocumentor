@@ -1,0 +1,25 @@
+{
+   "name": "jarstelfox/psalmdocumentor",
+   "description": "Outputs docblocks as markdown documentation with psalm's types",
+   "type": "psalm-plugin",
+   "license": "MIT",
+   "authors": [
+       {
+           "name": "Jarred Stelfox"
+       }
+   ],
+   "extra": {
+       "psalm": {
+           "pluginClass": "Vimeo\\CodeAnalysis\\EchoChecker\\PluginEntryPoint"
+       }
+   },
+   "require": {
+      "phpunit/phpunit": "^8.0",
+      "vimeo/psalm": "dev-master"
+  },
+  "autoload": {
+      "psr-4": {
+         "PsalmDocumentor\\": "src/"
+      }
+   }
+}
